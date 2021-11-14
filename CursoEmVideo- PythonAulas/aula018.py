@@ -33,7 +33,7 @@ print(f'Os pais são: {family[2][0]} com {family[2][1]} anos '
       f'e {family[3][0]} com  {family[3][1]} anos')
 '''
 
-
+'''
 guys = list() # master list
 database = list() # auxiliary list
 # Total of under ages and majors in the list
@@ -50,8 +50,9 @@ for c in range(0, 3):
     database.clear() # We're cleaning the database each looping, otherwise, the old informations in looping will acumulate in the new sub-lists
 
 print('-'*30)
-# This loop is importante, because we'll analyze "each person" inside "guys" variable 
+# This loop is so important, because we'll analyze "each person" inside "guys" variable and will add in your respectives variables
 for p in guys:
+    # If the data in 1º position, whose it's where the years data are save, bigger or equal to 21
     if p[1] >= 21:
         print(f'{p[0]} é maior de idade.')
         total_major += 1
@@ -62,3 +63,4 @@ print('-'*30)
 
 print(f'Há {total_major} maiores de idade' if total_major > 1 else f'Há {total_major} maior de idade')
 print(f'Há {total_under_age} menores de idade' if total_under_age > 1 else f'Há {total_under_age} menor de idade')
+'''
