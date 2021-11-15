@@ -56,9 +56,10 @@ print(f'Lista A: {a}')
 print(f'Lista B: {b}')
 print(f'Lista C (Cópia Modificada De A): {c}')
 '''
-
+'''
 lanche = ["hamburguer", "pera", "uva", "suco", "refrigerante"]
 
 lanche.remove("hamburguer")
 
 print(lanche)
+'''

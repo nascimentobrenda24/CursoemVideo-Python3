@@ -64,3 +64,24 @@ print('-'*30)
 print(f'Há {total_major} maiores de idade' if total_major > 1 else f'Há {total_major} maior de idade')
 print(f'Há {total_under_age} menores de idade' if total_under_age > 1 else f'Há {total_under_age} menor de idade')
 '''
+
+guys = list() # Major list
+data = list() # Auxiliar Structure
+young_tot = old_tot = 0
+
+# Read user data and store them in lists, erasing them at each round
+for c in range(0, 3):
+    data.append(str(input('Nome: ')))
+    data.append(int(input('Idade: ')))
+    guys.append(data[:])
+    data.clear()
+# Structure to validate who is of legal age and underage
+for p in guys:
+    if p[1] >= 21:
+        print(f'{p[0]} é maior de idade')
+        old_tot += 1
+    else:
+        print(f'{p[0]} é menor de idade')
+        young_tot += 1
+
+print(f'Temos {old_tot} maiores de idades e {young_tot} menores de idades')
