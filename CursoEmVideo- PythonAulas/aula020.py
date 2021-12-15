@@ -1,4 +1,4 @@
-def double(lst):
+'''def double(lst):
     pos = 0
     while pos < len(lst):
         lst[pos] *= 2
@@ -9,4 +9,4 @@ def double(lst):
 values = [6, 3, 9, 1, 0, 2]
 
 double(values)
-print(values)
+print(values)'''
